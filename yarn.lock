@@ -7,6 +7,11 @@
   resolved "https://registry.npmjs.org/@abhijithvijayan/eslint-config/-/eslint-config-1.3.1.tgz#588a40defc6f3017bed489a0c3bd269291c24cd5"
   integrity sha512-q8456CKgJaSC9eZPgpkjtOiXSaN7fhX9F/BWUgdGYX5FBGnrq+oU/d9dvi3ramK6nfSTiit3ygVlM5ZG9yTmVQ==
 
+"@abhijithvijayan/tsconfig@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@abhijithvijayan/tsconfig/-/tsconfig-1.1.2.tgz#37e3da206bcfb3bf782bbc2ba992f635c30b36ee"
+  integrity sha512-Dk1QXwuV2HKMIiaRQp0Gv+nZRKoNGw4YVLk4ap3HVIFd0lw8+Qrvl043XKWETk0XSgt+z9O5+pYdJVvuay2W5Q==
+
 "@ampproject/toolbox-core@^2.2.0", "@ampproject/toolbox-core@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-core/-/toolbox-core-2.3.0.tgz#f27bd17e01fdc6725c440aefa844f63466c0f37e"
