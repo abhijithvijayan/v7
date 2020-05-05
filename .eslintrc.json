@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "@abhijithvijayan/eslint-config/typescript",
+    "@abhijithvijayan/eslint-config/react"
+  ],
+  "rules": {}
+}
