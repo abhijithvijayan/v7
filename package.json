@@ -1,0 +1,19 @@
+{
+  "name": "v7",
+  "version": "0.1.0",
+  "description": "it's mine, move on !",
+  "private": true,
+  "license": "",
+  "repository": "https://github.com/abhijithvijayan/v7.git",
+  "author": {
+    "name": "abhijithvijayan",
+    "email": "34790378+abhijithvijayan@users.noreply.github.com",
+    "url": "https://abhijithvijayan.in"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
