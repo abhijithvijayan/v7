@@ -6,32 +6,47 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from 'next/document';
+import {ServerStyleSheet} from 'styled-components';
 
 class AppDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
+    const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
-    ctx.renderPage = (): ReturnType<typeof ctx.renderPage> =>
-      originalRenderPage({
-        // useful for wrapping the whole react tree
-        enhanceApp: (App) => App,
-        // useful for wrapping in a per-page basis
-        enhanceComponent: (Component) => Component,
-      });
+    try {
+      ctx.renderPage = (): ReturnType<typeof ctx.renderPage> =>
+        originalRenderPage({
+          // useful for wrapping the whole react tree
+          enhanceApp: (App) => (props): any =>
+            sheet.collectStyles(<App {...props} />),
+          // useful for wrapping in a per-page basis
+          enhanceComponent: (Component) => Component,
+        });
 
-    // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-    const initialProps = await Document.getInitialProps(ctx);
+      // Run the parent `getInitialProps`, it now includes the custom `renderPage`
+      const initialProps = await Document.getInitialProps(ctx);
 
-    return initialProps;
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render(): JSX.Element {
     return (
       <Html lang="en">
         <Head>
-          <title>Abhijith Vijayan</title>
+          <meta charSet="utf-8" />
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"

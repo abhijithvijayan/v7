@@ -1,8 +1,16 @@
+import styled from 'styled-components';
+import {Theme} from './_app';
+
+const StyledHeader = styled.h3`
+  font-size: 20px;
+  color: ${({theme}: {theme: Theme}): string => theme.purple};
+`;
+
 export default function Home(): JSX.Element {
   return (
     <div>
       <main>
-        <h3>Abhijith Vijayan</h3>
+        <StyledHeader>Abhijith Vijayan</StyledHeader>
       </main>
 
       <footer />
