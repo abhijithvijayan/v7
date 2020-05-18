@@ -24,7 +24,7 @@ function App({Component, pageProps}: AppProps): JSX.Element {
     <>
       <Head>
         {/* See: https://git.io/Jfnla */}
-        <title>Abhijith Vijayan</title>
+        <title>Abhijith Vijayan | Engineer & Developer</title>
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
