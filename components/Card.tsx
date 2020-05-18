@@ -45,10 +45,11 @@ const CardBody: React.FC = () => {
           >
             <Icon
               name="github"
-              tw="inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full"
+              tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full"
             />
           </a>
           <a
+            tw="ml-4"
             title="Tweets"
             href="https://twitter.com/_abhijithv"
             target="_blank"
@@ -56,10 +57,11 @@ const CardBody: React.FC = () => {
           >
             <Icon
               name="twitter"
-              tw="inline-flex items-center px-3 py-1 ml-4 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full"
+              tw="hover:text-blue-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full"
             />
           </a>
           <a
+            tw="ml-4"
             title="Hire"
             href="https://www.linkedin.com/in/iamabhijithvijayan/"
             target="_blank"
@@ -67,10 +69,11 @@ const CardBody: React.FC = () => {
           >
             <Icon
               name="linkedin"
-              tw="inline-flex items-center px-3 py-1 ml-4 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full"
+              tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full"
             />
           </a>
           <a
+            tw="ml-4"
             title="Writings"
             href="https://medium.com/@abhijithvijayan"
             target="_blank"
@@ -78,15 +81,14 @@ const CardBody: React.FC = () => {
           >
             <Icon
               name="pencil"
-              tw="inline-flex items-center px-3 py-1 ml-4 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full"
+              tw="hover:text-orange-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full"
             />
           </a>
-
           <Link href="/donate">
-            <a title="Donate">
+            <a title="Donate" tw="ml-4 cursor-pointer">
               <Icon
                 name="donate"
-                tw="inline-flex items-center px-3 py-1 ml-4 ml-4 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full"
+                tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full"
               />
             </a>
           </Link>
