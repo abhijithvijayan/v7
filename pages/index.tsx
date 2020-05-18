@@ -1,19 +1,14 @@
-import styled from 'styled-components';
-import {Theme} from './_app';
+import tw from 'twin.macro';
 
-const StyledHeader = styled.h3`
-  font-size: 20px;
-  color: ${({theme}: {theme: Theme}): string => theme.purple};
-`;
+import Card from '../components/Card';
+import BodyWrapper from '../components/BodyWrapper';
 
 export default function Home(): JSX.Element {
   return (
-    <div>
-      <main>
-        <StyledHeader>Abhijith Vijayan</StyledHeader>
-      </main>
-
-      <footer />
-    </div>
+    <BodyWrapper>
+      <div tw="w-full h-full bg-gray-900">
+        <Card />
+      </div>
+    </BodyWrapper>
   );
 }

@@ -1,1 +1,6 @@
-@import '~advanced-css-reset/dist/reset.css';
+@import '~advanced-css-reset';
+
+
+html {
+  background-color: rgb(26, 32, 44);
+}
