@@ -7,15 +7,17 @@ import CoffeeIcon from './Coffee';
 import PayPalIcon from './PayPal';
 import PatreonIcon from './Patreon';
 import TwitterIcon from './Twitter';
+import LinkedInIcon from './LinkedIn';
 
 const icons = {
   github: GitHubIcon,
   coffee: CoffeeIcon,
   paypal: PayPalIcon,
-  patreon: PatreonIcon,
   donate: DonateIcon,
   pencil: PencilIcon,
   twitter: TwitterIcon,
+  patreon: PatreonIcon,
+  linkedin: LinkedInIcon,
 };
 
 export type Icons = keyof typeof icons;

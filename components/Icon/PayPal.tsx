@@ -8,8 +8,8 @@ const PayPalIcon: React.FC = () => {
       data-icon="paypal"
       className="paypal-brands_svg__svg-inline--fa paypal-brands_svg__fa-paypal paypal-brands_svg__fa-w-12"
       viewBox="0 0 384 512"
-      height={28}
-      width={28}
+      height={19}
+      width={19}
     >
       <path
         fill="currentColor"

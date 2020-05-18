@@ -3,6 +3,9 @@ import React from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 import tw from 'twin.macro';
+import Link from 'next/link';
+
+import Icon from './Icon';
 
 const CardHeader: React.FC = () => {
   return (
@@ -33,6 +36,61 @@ const CardBody: React.FC = () => {
         <p tw="text-sm text-center text-gray-600">
           I build things that aren&#39;t evil.
         </p>
+        <div tw="flex flex-wrap justify-center mt-5">
+          <a
+            title="Code"
+            href="https://github.com/abhijithvijayan/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            <Icon
+              name="github"
+              tw="inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full"
+            />
+          </a>
+          <a
+            title="Tweets"
+            href="https://twitter.com/_abhijithv"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            <Icon
+              name="twitter"
+              tw="inline-flex items-center px-3 py-1 ml-4 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full"
+            />
+          </a>
+          <a
+            title="Hire"
+            href="https://www.linkedin.com/in/iamabhijithvijayan/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            <Icon
+              name="linkedin"
+              tw="inline-flex items-center px-3 py-1 ml-4 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full"
+            />
+          </a>
+          <a
+            title="Writings"
+            href="https://medium.com/@abhijithvijayan"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            <Icon
+              name="pencil"
+              tw="inline-flex items-center px-3 py-1 ml-4 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full"
+            />
+          </a>
+
+          <Link href="/donate">
+            <a title="Donate">
+              <Icon
+                name="donate"
+                tw="inline-flex items-center px-3 py-1 ml-4 ml-4 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full"
+              />
+            </a>
+          </Link>
+        </div>
       </div>
     </>
   );
@@ -42,18 +100,22 @@ const CardFooter: React.FC = () => {
   return (
     <>
       <div tw="flex flex-wrap pt-3 mx-6 mt-6 border-t">
-        <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
-          TypeScript
-        </div>
-        <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
-          React
-        </div>
-        <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
-          NodeJS
-        </div>
-        <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
-          Flask
-        </div>
+        <h1 tw="w-full text-base font-semibold text-center">
+          I’m currently available for freelance work.
+        </h1>
+
+        <p tw="text-sm text-center text-gray-600">
+          My inbox is always open whether for a potential project or just to say
+          hi, so here is my{' '}
+          <a
+            tw="hover:border-b-2 hover:text-gray-700 font-semibold text-gray-600"
+            href="mailto:iam@abhijithvijayan.in"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Email !
+          </a>
+        </p>
       </div>
     </>
   );

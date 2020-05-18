@@ -8,8 +8,8 @@ const TwitterIcon: React.FC = () => {
       data-icon="twitter"
       className="twitter-brands_svg__svg-inline--fa twitter-brands_svg__fa-twitter twitter-brands_svg__fa-w-16"
       viewBox="0 0 512 512"
-      height={28}
-      width={28}
+      height={19}
+      width={19}
     >
       <path
         fill="currentColor"

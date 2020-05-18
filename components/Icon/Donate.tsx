@@ -8,8 +8,8 @@ const DonateIcon: React.FC = () => {
       data-icon="donate"
       className="donate-solid_svg__svg-inline--fa donate-solid_svg__fa-donate donate-solid_svg__fa-w-16"
       viewBox="0 0 512 512"
-      height={28}
-      width={28}
+      height={19}
+      width={19}
     >
       <path
         fill="currentColor"

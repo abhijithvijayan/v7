@@ -8,8 +8,8 @@ const CoffeeIcon: React.FC = () => {
       data-icon="coffee"
       className="coffee-solid_svg__svg-inline--fa coffee-solid_svg__fa-coffee coffee-solid_svg__fa-w-20"
       viewBox="0 0 640 512"
-      height={28}
-      width={28}
+      height={19}
+      width={19}
     >
       <path
         fill="currentColor"

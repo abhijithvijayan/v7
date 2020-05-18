@@ -8,8 +8,8 @@ const GitHubIcon: React.FC = () => {
       data-icon="github"
       className="github-brands_svg__svg-inline--fa github-brands_svg__fa-github github-brands_svg__fa-w-16"
       viewBox="0 0 496 512"
-      height={28}
-      width={28}
+      height={19}
+      width={19}
     >
       <path
         fill="currentColor"

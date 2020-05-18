@@ -8,8 +8,8 @@ const PatreonIcon: React.FC = () => {
       data-icon="patreon"
       className="patreon-brands_svg__svg-inline--fa patreon-brands_svg__fa-patreon patreon-brands_svg__fa-w-16"
       viewBox="0 0 512 512"
-      height={28}
-      width={28}
+      height={19}
+      width={19}
     >
       <path
         fill="currentColor"
