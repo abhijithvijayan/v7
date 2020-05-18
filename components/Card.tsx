@@ -33,7 +33,7 @@ const CardBody: React.FC = () => {
     <>
       <div tw="mt-16">
         <h1 tw="text-lg font-semibold text-center">Abhijith Vijayan</h1>
-        <p tw="text-sm text-center text-gray-600">
+        <p tw="text-sm text-center text-gray-600 select-none">
           I build things that aren&#39;t evil.
         </p>
         <div tw="flex flex-wrap justify-center mt-5">
@@ -102,11 +102,11 @@ const CardFooter: React.FC = () => {
   return (
     <>
       <div tw="flex flex-wrap pt-3 mx-6 mt-6 border-t">
-        <h1 tw="w-full text-base font-semibold text-center">
+        <h1 tw="w-full font-semibold text-center text-gray-700 select-none">
           I’m currently available for freelance work.
         </h1>
 
-        <p tw="text-sm text-center text-gray-600">
+        <p tw="text-sm text-center text-gray-600 select-none">
           My inbox is always open whether for a potential project or just to say
           hi, so here is my{' '}
           <a
