@@ -4,8 +4,8 @@ import tw from 'twin.macro';
 const BodyWrapper: React.FC = ({children}) => {
   return (
     <>
-      <div tw="w-full">
-        <main>{children}</main>
+      <div tw="relative min-h-screen">
+        <main tw="w-full min-h-screen">{children}</main>
       </div>
     </>
   );
