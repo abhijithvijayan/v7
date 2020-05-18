@@ -4,41 +4,41 @@ import tw from 'twin.macro';
 const Card: React.FC = () => {
   return (
     <>
-      <div tw="container mx-auto px-4 h-full">
-        <div tw="flex content-center items-center justify-center h-full">
+      <div tw="container h-full px-4 mx-auto">
+        <div tw="flex items-center content-center justify-center h-full">
           <div tw="w-full px-4 pt-32">
-            <div tw="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto">
+            <div tw="md:max-w-sm items-center justify-center w-full pb-6 mx-auto my-12 overflow-hidden bg-white rounded-lg shadow-sm">
               <div tw="relative h-40">
                 <img
+                  tw="absolute object-cover w-full h-full"
                   alt="background-header"
-                  tw="absolute h-full w-full object-cover"
                   src="/activity.png"
                 />
               </div>
-              <div tw="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
+              <div tw="relative w-24 h-24 mx-auto -my-12 overflow-hidden border-4 border-white rounded-full shadow">
                 <img
-                  alt="profile-header"
                   tw="object-cover w-full h-full"
+                  alt="profile-header"
                   src="/unicorn.png"
                 />
               </div>
               <div tw="mt-16">
-                <h1 tw="text-lg text-center font-semibold">Abhijith Vijayan</h1>
-                <p tw="text-sm text-gray-600 text-center">
+                <h1 tw="text-lg font-semibold text-center">Abhijith Vijayan</h1>
+                <p tw="text-sm text-center text-gray-600">
                   I build things that aren&#39;t evil.
                 </p>
               </div>
-              <div tw="mt-6 pt-3 flex flex-wrap mx-6 border-t">
-                <div tw="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+              <div tw="flex flex-wrap pt-3 mx-6 mt-6 border-t">
+                <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
                   TypeScript
                 </div>
-                <div tw="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
                   React
                 </div>
-                <div tw="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
                   NodeJS
                 </div>
-                <div tw="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                <div tw="hover:bg-indigo-600 hover:text-indigo-100 px-2 my-1 mr-2 text-xs tracking-wider text-indigo-600 uppercase border border-indigo-600 cursor-default">
                   Flask
                 </div>
               </div>
