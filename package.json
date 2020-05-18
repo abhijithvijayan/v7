@@ -25,7 +25,8 @@
     "next": "9.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "twin.macro": "^1.0.0"
   },
   "devDependencies": {
     "@abhijithvijayan/eslint-config": "1.4.0",
