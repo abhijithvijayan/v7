@@ -11,8 +11,8 @@ import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 export default function Home(): JSX.Element {
   return (
     <BodyWrapper>
-      <section id="hero" tw="h-screen">
-        <div tw="w-full h-full bg-gray-900">
+      <section id="hero" tw="block">
+        <div tw="flex flex-col justify-center w-full h-full min-h-screen bg-gray-900">
           <Card>
             <CardHeader>
               <div tw="relative h-40">
