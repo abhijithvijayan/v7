@@ -8,6 +8,8 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
+import {SiteProps} from '../config';
+
 export default function Home(): JSX.Element {
   return (
     <BodyWrapper>
@@ -24,7 +26,7 @@ export default function Home(): JSX.Element {
                     <img
                       alt="unicorn"
                       tw="object-cover w-full h-full"
-                      src="/unicorn.png"
+                      src={SiteProps.Profile}
                     />
                   </div>
                 </div>

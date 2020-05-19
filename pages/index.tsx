@@ -8,6 +8,8 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
+import {SiteProps} from '../config';
+
 export default function Home(): JSX.Element {
   return (
     <BodyWrapper>
@@ -19,14 +21,14 @@ export default function Home(): JSX.Element {
                 <img
                   tw="absolute object-cover w-full h-full"
                   alt="background-header"
-                  src="/activity.png"
+                  src={SiteProps.Cover}
                 />
               </div>
               <div tw="relative w-24 h-24 mx-auto -my-12 overflow-hidden border-4 border-white rounded-full shadow">
                 <img
                   tw="object-cover w-full h-full"
                   alt="profile-header"
-                  src="/unicorn.png"
+                  src={SiteProps.Profile}
                 />
               </div>
             </CardHeader>
