@@ -7,7 +7,7 @@
   "repository": "https://github.com/abhijithvijayan/v7.git",
   "author": {
     "name": "abhijithvijayan",
-    "email": "34790378+abhijithvijayan@users.noreply.github.com",
+    "email": "iam@abhijithvijayan.in",
     "url": "https://abhijithvijayan.in"
   },
   "engines": {
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "advanced-css-reset": "^1.1.1",
+    "emoji-log": "^1.0.2",
     "next": "9.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",

@@ -4,6 +4,8 @@
  *  @author abhijithvijayan <abhijithvijayan.in>
  */
 
+import 'emoji-log';
+import {useEffect} from 'react';
 import {AppProps} from 'next/app';
 import Head from 'next/head';
 import {ThemeProvider} from 'styled-components';
@@ -20,6 +22,11 @@ export interface Theme {
 }
 
 function App({Component, pageProps}: AppProps): JSX.Element {
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.emoji('🦄', "Wouldn't you like to know!");
+  }, []);
+
   return (
     <>
       <Head>
