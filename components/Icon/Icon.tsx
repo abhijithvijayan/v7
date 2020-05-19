@@ -40,6 +40,7 @@ type Props = {
 };
 
 const Icon: React.FC<Props> = ({name, ...rest}) => {
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <div {...rest}>{React.createElement(icons[name])}</div>;
 };
 

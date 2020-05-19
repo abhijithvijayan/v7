@@ -34,6 +34,7 @@ function App({Component, pageProps}: AppProps): JSX.Element {
         <title>Abhijith Vijayan | Engineer & Developer</title>
       </Head>
       <ThemeProvider theme={theme}>
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>

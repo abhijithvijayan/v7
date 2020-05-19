@@ -20,6 +20,7 @@ class AppDocument extends Document {
         originalRenderPage({
           // useful for wrapping the whole react tree
           enhanceApp: (App) => (props): any =>
+            // eslint-disable-next-line react/jsx-props-no-spreading
             sheet.collectStyles(<App {...props} />),
           // useful for wrapping in a per-page basis
           enhanceComponent: (Component) => Component,
