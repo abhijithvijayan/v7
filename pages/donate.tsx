@@ -43,6 +43,7 @@ export default function Home(): JSX.Element {
                   please consider backing me with simple donations so that I can
                   continue{' '}
                   <a
+                    tw="border-b-2 border-gray-200"
                     href="https://github.com/abhijithvijayan"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
@@ -66,23 +67,8 @@ export default function Home(): JSX.Element {
                     >
                       <Icon name="github" tw="text-gray-800" />
                       <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-800">
+                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800 hover:text-gray-800">
                           GitHub Sponsors
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href="https://www.patreon.com/abhijithvijayan"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                    >
-                      <Icon name="patreon" tw="text-gray-800" />
-                      <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-800">
-                          Patreon
                         </p>
                       </div>
                     </a>
@@ -96,8 +82,23 @@ export default function Home(): JSX.Element {
                     >
                       <Icon name="circle-notch" tw="text-gray-800" />
                       <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-800">
+                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
                           Open Collective
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
+                      href="https://www.patreon.com/abhijithvijayan"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <Icon name="patreon" tw="text-gray-800" />
+                      <div tw="pl-3">
+                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
+                          Patreon
                         </p>
                       </div>
                     </a>
@@ -116,7 +117,7 @@ export default function Home(): JSX.Element {
                     >
                       <Icon name="paypal" tw="text-gray-800" />
                       <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-800">
+                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
                           My PayPal
                         </p>
                       </div>
@@ -131,7 +132,7 @@ export default function Home(): JSX.Element {
                     >
                       <Icon name="coffee" tw="text-gray-800" />
                       <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-800">
+                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
                           BuyMeACoffee.com
                         </p>
                       </div>
