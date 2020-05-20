@@ -1,8 +1,4 @@
-// Remove on: https://github.com/ben-rogerson/twin.macro/issues/51
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
-import tw from 'twin.macro';
-
+import 'twin.macro';
 import Link from 'next/link';
 import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
