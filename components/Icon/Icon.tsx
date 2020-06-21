@@ -35,8 +35,9 @@ type Props = {
   hoverStroke?: string;
   strokeWidth?: string;
   className?: string;
-  style?: unknown;
-  onClick?: (e?: unknown) => void;
+  style?: React.CSSProperties;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  onClick?: (e?: any) => void;
 };
 
 const Icon: React.FC<Props> = ({name, ...rest}) => {
