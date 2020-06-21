@@ -24,6 +24,8 @@ export default function Home(): JSX.Element {
                       alt="unicorn"
                       tw="object-cover w-full h-full"
                       src={SiteProps.Profile}
+                      width={999}
+                      height={1008}
                     />
                   </div>
                 </div>

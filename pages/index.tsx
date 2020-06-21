@@ -18,6 +18,8 @@ export default function Home(): JSX.Element {
                   tw="absolute object-cover w-full h-full"
                   alt="background-header"
                   src={SiteProps.Cover}
+                  width={1384}
+                  height={777}
                 />
               </div>
               <div tw="relative w-24 h-24 mx-auto -my-12 overflow-hidden border-4 border-white rounded-full shadow">
@@ -25,6 +27,8 @@ export default function Home(): JSX.Element {
                   tw="object-cover w-full h-full"
                   alt="profile-header"
                   src={SiteProps.Profile}
+                  width={999}
+                  height={1008}
                 />
               </div>
             </CardHeader>
@@ -103,7 +107,7 @@ export default function Home(): JSX.Element {
                 to say hi, so here is my{' '}
                 <a
                   tw="hover:border-b-2 hover:text-gray-700 font-semibold text-gray-600"
-                  href="mailto:iam@abhijithvijayan.in"
+                  href="mailto:email@abhijithvijayan.in"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                 >
