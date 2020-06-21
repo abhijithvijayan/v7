@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "description": "it's mine, move on !",
   "private": true,
-  "license": "",
+  "license": "MIT",
   "repository": "https://github.com/abhijithvijayan/v7.git",
   "author": {
     "name": "abhijithvijayan",
-    "email": "iam@abhijithvijayan.in",
+    "email": "email@abhijithvijayan.in",
     "url": "https://abhijithvijayan.in"
   },
   "engines": {
