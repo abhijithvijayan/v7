@@ -35,8 +35,8 @@ type Props = {
   hoverStroke?: string;
   strokeWidth?: string;
   className?: string;
-  style?: any;
-  onClick?: (e?: any) => void;
+  style?: unknown;
+  onClick?: (e?: unknown) => void;
 };
 
 const Icon: React.FC<Props> = ({name, ...rest}) => {
