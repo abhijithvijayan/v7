@@ -4,7 +4,7 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
-import {SiteProps, SocialLinks} from '../config';
+import {SiteProps, Routes} from '../config';
 
 export default function Home(): JSX.Element {
   return (
@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
                 <div tw="flex flex-wrap justify-center mt-5">
                   <a
                     title="Code"
-                    href={SocialLinks.GitHub}
+                    href={Routes.GitHub}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -53,7 +53,7 @@ export default function Home(): JSX.Element {
                   <a
                     tw="ml-4"
                     title="Tweets"
-                    href={SocialLinks.Twitter}
+                    href={Routes.Twitter}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -65,7 +65,7 @@ export default function Home(): JSX.Element {
                   <a
                     tw="ml-4"
                     title="Hire"
-                    href={SocialLinks.LinkedIn}
+                    href={Routes.LinkedIn}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -77,7 +77,7 @@ export default function Home(): JSX.Element {
                   <a
                     tw="ml-4"
                     title="Writings"
-                    href={SocialLinks.Medium}
+                    href={Routes.Writings}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -86,7 +86,7 @@ export default function Home(): JSX.Element {
                       tw="hover:text-orange-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full"
                     />
                   </a>
-                  <Link href="/donate">
+                  <Link href={Routes.Donate}>
                     <a title="Donate" tw="ml-4 cursor-pointer">
                       <Icon
                         name="donate"

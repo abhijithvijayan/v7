@@ -6,6 +6,9 @@ module.exports = {
   exportPathMap() {
     return {
       '/': {page: '/'},
+      '/donate': {page: '/donate'},
+      '/github': {page: '/github'},
+      '/writings': {page: '/writings'},
     };
   },
 };

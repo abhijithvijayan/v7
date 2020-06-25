@@ -32,3 +32,12 @@ export enum SocialLinks {
   PayPal = 'https://www.paypal.me/iamabhijithvijayan',
   BuyMeACoffee = 'https://www.buymeacoffee.com/abhijithvijayan',
 }
+
+export enum Routes {
+  Root = '/',
+  Donate = '/donate',
+  Writings = '/writings',
+  GitHub = '/github',
+  Twitter = '/twitter',
+  LinkedIn = '/linkedin',
+}
