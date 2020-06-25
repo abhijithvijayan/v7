@@ -1,10 +1,11 @@
 <h1 align="center">V7</h1>
 <p align="center">Source code for my personal website build with Next.js</p>
 <div align="center">
-<a href="https://app.netlify.com/sites/abhijithvijayan/deploys">
+  <a href="https://app.netlify.com/sites/abhijithvijayan/deploys">
     <img src="https://api.netlify.com/api/v1/badges/495cca9f-2238-4c95-9d85-53aa03062938/deploy-status" alt="Netlify Build" />
   </a>
 </div>
+<p align="center">https://abhijithvijayan.in</p>
 <h3 align="center">🙋‍♂️ Made by <a href="https://twitter.com/_abhijithv">@abhijithvijayan</a></h3>
 <p align="center">
   Donate:
