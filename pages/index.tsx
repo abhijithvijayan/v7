@@ -4,7 +4,7 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
-import {SiteProps} from '../config';
+import {SiteProps, SocialLinks} from '../config';
 
 export default function Home(): JSX.Element {
   return (
@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
                 <div tw="flex flex-wrap justify-center mt-5">
                   <a
                     title="Code"
-                    href="https://github.com/abhijithvijayan/"
+                    href={SocialLinks.GitHub}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -53,7 +53,7 @@ export default function Home(): JSX.Element {
                   <a
                     tw="ml-4"
                     title="Tweets"
-                    href="https://twitter.com/_abhijithv"
+                    href={SocialLinks.Twitter}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -65,7 +65,7 @@ export default function Home(): JSX.Element {
                   <a
                     tw="ml-4"
                     title="Hire"
-                    href="https://www.linkedin.com/in/iamabhijithvijayan/"
+                    href={SocialLinks.LinkedIn}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -77,7 +77,7 @@ export default function Home(): JSX.Element {
                   <a
                     tw="ml-4"
                     title="Writings"
-                    href="https://medium.com/@abhijithvijayan"
+                    href={SocialLinks.Medium}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -107,7 +107,7 @@ export default function Home(): JSX.Element {
                 to say hi, so here is my{' '}
                 <a
                   tw="hover:border-b-2 hover:text-gray-700 font-semibold text-gray-600"
-                  href="mailto:email@abhijithvijayan.in"
+                  href={`mailto:${SiteProps.Email}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                 >

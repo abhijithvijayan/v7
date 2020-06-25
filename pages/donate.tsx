@@ -5,7 +5,7 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
-import {SiteProps} from '../config';
+import {SiteProps, SocialLinks} from '../config';
 
 export default function Home(): JSX.Element {
   return (
@@ -43,7 +43,7 @@ export default function Home(): JSX.Element {
                   continue{' '}
                   <a
                     tw="border-b-2 border-gray-200"
-                    href="https://github.com/abhijithvijayan"
+                    href={SocialLinks.GitHub}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -60,7 +60,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href="https://github.com/sponsors/abhijithvijayan"
+                      href={SocialLinks.GitHubSponsors}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -75,7 +75,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href="https://opencollective.com/abhijithvijayan"
+                      href={SocialLinks.OpenCollective}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href="https://www.patreon.com/abhijithvijayan"
+                      href={SocialLinks.Patreon}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href="https://www.paypal.me/iamabhijithvijayan"
+                      href={SocialLinks.PayPal}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -125,7 +125,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href="https://www.buymeacoffee.com/abhijithvijayan"
+                      href={SocialLinks.BuyMeACoffee}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
