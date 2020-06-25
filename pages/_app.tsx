@@ -33,6 +33,7 @@ function App({Component, pageProps}: AppProps): JSX.Element {
     <>
       <Head>
         {/* See: https://git.io/Jfnla */}
+        <title>{SiteProps.Title}</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
