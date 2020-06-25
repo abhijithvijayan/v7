@@ -5,7 +5,7 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
-import {SiteProps, SocialLinks} from '../config';
+import {SiteProps, SocialLinks, Routes} from '../config';
 
 export default function Home(): JSX.Element {
   return (
@@ -43,7 +43,7 @@ export default function Home(): JSX.Element {
                   continue{' '}
                   <a
                     tw="border-b-2 border-gray-200"
-                    href={SocialLinks.GitHub}
+                    href={Routes.GitHub}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -75,7 +75,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href={SocialLinks.OpenCollective}
+                      href={Routes.OpenCollective}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href={SocialLinks.Patreon}
+                      href={Routes.Patreon}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href={SocialLinks.PayPal}
+                      href={Routes.PayPal}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -125,7 +125,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       tw="hover:bg-gray-100 flex items-center px-4 py-1"
-                      href={SocialLinks.BuyMeACoffee}
+                      href={Routes.BuyMeACoffee}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >

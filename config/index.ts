@@ -40,4 +40,8 @@ export enum Routes {
   GitHub = '/github',
   Twitter = '/twitter',
   LinkedIn = '/linkedin',
+  Patreon = '/patreon',
+  PayPal = '/paypal',
+  BuyMeACoffee = '/buymeacoffee',
+  OpenCollective = '/opencollective',
 }
