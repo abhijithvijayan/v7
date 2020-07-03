@@ -3,5 +3,10 @@
     "@abhijithvijayan/eslint-config/typescript",
     "@abhijithvijayan/eslint-config/react"
   ],
-  "rules": {}
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "class-methods-use-this": "off"
+  }
 }
