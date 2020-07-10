@@ -1,11 +1,18 @@
 <h1 align="center">V7</h1>
 <p align="center">Source code for my personal website build with Next.js</p>
+<p align="center">https://abhijithvijayan.in</p>
 <div align="center">
   <a href="https://app.netlify.com/sites/abhijithvijayan/deploys">
     <img src="https://api.netlify.com/api/v1/badges/495cca9f-2238-4c95-9d85-53aa03062938/deploy-status" alt="Netlify Build" />
   </a>
+  </a>
+  <a href="https://david-dm.org/abhijithvijayan/v7">
+    <img src="https://img.shields.io/david/abhijithvijayan/v7.svg?colorB=orange" alt="DEPENDENCIES" />
+  </a>
+  <a href="https://github.com/abhijithvijayan/v7/blob/main/license">
+    <img src="https://img.shields.io/github/license/abhijithvijayan/v7.svg" alt="LICENSE" />
+  </a>
 </div>
-<p align="center">https://abhijithvijayan.in</p>
 <h3 align="center">🙋‍♂️ Made by <a href="https://twitter.com/_abhijithv">@abhijithvijayan</a></h3>
 <p align="center">
   Donate:
@@ -19,9 +26,18 @@
 </p>
 <hr />
 
-❤️ it? ⭐️ it on [GitHub](https://github.com/abhijithvijayan/v7)
+❤️ it? ⭐️ it on [GitHub](https://github.com/abhijithvijayan/v7/stargazers).
+
+## Table of Contents
+
+- [Quick Start](#🚀-quick-start)
+- [Issues](#issues)
+  - [🐛 Bugs](#-bugs)
+- [LICENSE](#license)
 
 ## 🚀 Quick Start
+
+Ensure you have [Node.js](https://nodejs.org) 10 or later installed. Then run the following:
 
 - `yarn install` to install dependencies.
 - `yarn dev` to start the development server.
@@ -29,6 +45,22 @@
 - `yarn export` to use Next.js static exports.
 - `yarn deploy:static` runs `build` and `export` commands at once.
 
-## 🗞 Licence
+## Issues
 
-Code released under the [MIT License](LICENSE).
+_Looking to contribute? Look for the [Good First Issue](https://github.com/abhijithvijayan/v7/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22)
+label._
+
+### 🐛 Bugs
+
+Please file an issue [here](https://github.com/abhijithvijayan/v7/issues/new) for bugs, missing documentation, or unexpected behavior.
+
+[**See Bugs**](https://github.com/abhijithvijayan/v7/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22type%3A+bug%22)
+
+### Linting & TypeScript Config
+
+- Shared Eslint & Prettier Configuration - [`@abhijithvijayan/eslint-config`](https://www.npmjs.com/package/@abhijithvijayan/eslint-config)
+- Shared TypeScript Configuration - [`@abhijithvijayan/tsconfig`](https://www.npmjs.com/package/@abhijithvijayan/tsconfig)
+
+## License
+
+MIT © [Abhijith Vijayan](https://abhijithvijayan.in)
