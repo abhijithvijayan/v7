@@ -98,8 +98,8 @@ export default function Home(): JSX.Element {
               </div>
             </CardBody>
             <CardFooter>
-              <h1 tw="w-full font-semibold text-center text-gray-700 select-none">
-                I’m currently available for freelance work.
+              <h1 tw="w-full font-normal text-center text-gray-700 select-none">
+                -\_(''/)_/-
               </h1>
 
               <p tw="text-sm text-center text-gray-600 select-none">
