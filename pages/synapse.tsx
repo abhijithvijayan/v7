@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import {SocialLinks} from '../config';
 
-const WritingsRedirect: React.FC = () => {
+const BlogRedirect: React.FC = () => {
   React.useEffect(() => {
     window.location.href = SocialLinks.Medium;
   }, []);
@@ -10,4 +10,4 @@ const WritingsRedirect: React.FC = () => {
   return <div />;
 };
 
-export default WritingsRedirect;
+export default BlogRedirect;

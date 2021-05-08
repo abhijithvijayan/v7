@@ -36,7 +36,7 @@ export enum SocialLinks {
 export enum Routes {
   Root = '/',
   Donate = '/donate',
-  Writings = '/writings',
+  Synapse = '/synapse',
   GitHub = '/github',
   Twitter = '/twitter',
   LinkedIn = '/linkedin',

@@ -72,8 +72,8 @@ export default function Home(): JSX.Element {
                     />
                   </a>
                   <a
-                    title="Writings"
-                    href={Routes.Writings}
+                    title="Synapse"
+                    href={Routes.Synapse}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >

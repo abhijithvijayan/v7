@@ -18,7 +18,7 @@ module.exports = {
       '/patreon': {page: '/patreon'},
       '/paypal': {page: '/paypal'},
       '/twitter': {page: '/twitter'},
-      '/writings': {page: '/writings'},
+      '/synapse': {page: '/synapse'},
     };
   },
 };
