@@ -63,9 +63,6 @@
     "lint-staged": "^11.0.0",
     "node-sass": "^5.0.0",
     "prettier": "^2.1.2",
-    "sass-extract": "^2.1.0",
-    "sass-extract-js": "^0.4.0",
-    "sass-extract-loader": "^1.1.0",
     "typescript": "^4.2.4"
   }
 }
