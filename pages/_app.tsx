@@ -26,6 +26,10 @@ function App({Component, pageProps}: AppProps): JSX.Element {
         {/* See: https://git.io/Jfnla */}
         <title>{SiteProps.Title}</title>
         <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+        />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"

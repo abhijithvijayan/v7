@@ -46,13 +46,7 @@ class AppDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="en">
-        <Head>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-        </Head>
+        <Head />
 
         <body>
           <Main />
