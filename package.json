@@ -29,7 +29,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn run lint:fix"
+      "eslint . --ext .ts,.tsx"
     ]
   },
   "dependencies": {
