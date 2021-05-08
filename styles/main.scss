@@ -1,6 +1,24 @@
-@import "base/fonts";
-@import '~tailwindcss/dist/base.css';
+@tailwind base;
+
+/* Write your own custom base styles here */
 
 @import "base/variables";
 @import "base/reset";
+@import "base/fonts";
 @import "base/components";
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+body {
+  font-family: $montessarat;
+}
