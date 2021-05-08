@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react';
+import * as React from 'react';
 
 import {SocialLinks} from '../config';
 
 const OpenCollectiveRedirect: React.FC = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     window.location.href = SocialLinks.OpenCollective;
   }, []);
 

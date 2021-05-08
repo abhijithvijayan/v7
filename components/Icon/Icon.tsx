@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import GitHubIcon from './GitHub';
 import DonateIcon from './Donate';
