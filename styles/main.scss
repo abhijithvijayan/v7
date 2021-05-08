@@ -12,13 +12,10 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+@import "partials/home";
 
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
 
 /* Your own custom utilities */
-
-body {
-  font-family: $montessarat;
-}

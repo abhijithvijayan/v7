@@ -1,44 +1,43 @@
-import 'twin.macro';
 import Link from 'next/link';
-import Icon from '../components/Icon';
-import BodyWrapper from '../components/BodyWrapper';
+
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
+import BodyWrapper from '../components/BodyWrapper';
+import Icon from '../components/Icon';
 
 import {SiteProps, Routes} from '../config';
 
 export default function Home(): JSX.Element {
   return (
     <BodyWrapper>
-      <section id="hero" tw="block">
-        <div tw="flex flex-col justify-center w-full h-full min-h-screen bg-gray-900">
+      <section id="hero">
+        <div className={"wrapper"}>
           <Card>
             <CardHeader>
-              <div tw="relative h-40">
+              <div className={"cover-image"}>
                 <img
-                  tw="absolute object-cover w-full h-full"
-                  alt="background-header"
+                  alt="..."
                   src={SiteProps.Cover}
                   width={1384}
                   height={777}
                 />
               </div>
-              <div tw="relative w-24 h-24 mx-auto -my-12 overflow-hidden border-4 border-white rounded-full shadow">
+              <div className={"profile-image"}>
                 <img
-                  tw="object-cover w-full h-full"
-                  alt="profile-header"
+                  alt="..."
                   src={SiteProps.Profile}
                   width={999}
                   height={1008}
                 />
               </div>
             </CardHeader>
+
             <CardBody>
-              <div tw="mt-16 mb-6">
-                <h1 tw="text-lg font-semibold text-center">Abhijith Vijayan</h1>
-                <p tw="text-sm text-center text-gray-600 select-none">
+              <div className={"body-content-wrapper"}>
+                <h1 className={"title"}>Abhijith Vijayan</h1>
+                <p className={"tagline"}>
                   I build things that aren&#39;t evil.
                 </p>
-                <div tw="flex flex-wrap justify-center mt-5">
+                <div className={"social-links"}>
                   <a
                     title="Code"
                     href={Routes.GitHub}
@@ -47,11 +46,10 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="github"
-                      tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full"
+                      className={"github"}
                     />
                   </a>
                   <a
-                    tw="ml-4"
                     title="Tweets"
                     href={Routes.Twitter}
                     target="_blank"
@@ -59,11 +57,10 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="twitter"
-                      tw="hover:text-blue-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full"
+                      className={"twitter"}
                     />
                   </a>
                   <a
-                    tw="ml-4"
                     title="Hire"
                     href={Routes.LinkedIn}
                     target="_blank"
@@ -71,11 +68,10 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="linkedin"
-                      tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full"
+                      className={"linkedin"}
                     />
                   </a>
                   <a
-                    tw="ml-4"
                     title="Writings"
                     href={Routes.Writings}
                     target="_blank"
@@ -83,30 +79,31 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="pencil"
-                      tw="hover:text-orange-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full"
+                      className={"pencil"}
                     />
                   </a>
                   <Link href={Routes.Donate}>
-                    <a title="Donate" tw="ml-4 cursor-pointer">
+                    <a title="Donate">
                       <Icon
                         name="donate"
-                        tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full"
+                        className={"donation"}
                       />
                     </a>
                   </Link>
                 </div>
               </div>
             </CardBody>
+
             <CardFooter>
-              <h1 tw="w-full font-normal text-center text-gray-700 select-none">
+              <h1 className={"subtext"}>
                 -\_(''/)_/-
               </h1>
 
-              <p tw="text-sm text-center text-gray-600 select-none">
+              <p className={"detailed"}>
                 My inbox is always open whether for a potential project or just
                 to say hi, so here is my{' '}
                 <a
-                  tw="hover:border-b-2 hover:text-gray-700 font-semibold text-gray-600"
+                  className={"email"}
                   href={`mailto:${SiteProps.Email}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"

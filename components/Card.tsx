@@ -1,33 +1,35 @@
+import * as React from 'react';
 import 'twin.macro';
-import React from 'react';
 
-export const CardHeader: React.FC = ({children}) => {
-  return <>{children}</>;
+type Props = {children: React.ReactNode}
+
+export const CardHeader: React.FC<Props> = ({children}) => {
+    return <div className={"card-header"}>{children}</div>;
 };
 
-export const CardBody: React.FC = ({children}) => {
+export const CardBody: React.FC<Props> = ({children}) => {
   return (
     <>
-      <div tw="px-2">{children}</div>
+      <div className={"card-body"}>{children}</div>
     </>
   );
 };
 
-export const CardFooter: React.FC = ({children}) => {
+export const CardFooter: React.FC<Props> = ({children}) => {
   return (
     <>
-      <div tw="flex flex-wrap pt-3 mx-6 border-t">{children}</div>
+      <div className={"card-footer"}>{children}</div>
     </>
   );
 };
 
-const Card: React.FC = ({children}) => {
+const Card: React.FC<Props> = ({children}) => {
   return (
     <>
-      <div tw="container h-full px-4 mx-auto">
-        <div tw="flex items-center content-center justify-center h-full">
-          <div tw="w-full px-4">
-            <div tw="md:max-w-sm items-center justify-center w-full pb-6 mx-auto my-12 overflow-hidden bg-white rounded-lg shadow-sm">
+      <div className={"card-wrapper"}>
+        <div className={"card-content-wrapper"}>
+          <div className={"content-wrapper"}>
+            <div className={"content"}>
               {children}
             </div>
           </div>
