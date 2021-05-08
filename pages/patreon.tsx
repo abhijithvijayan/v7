@@ -3,7 +3,7 @@ import * as React from 'react';
 import {SocialLinks} from '../config';
 
 const PatreonRedirect: React.FC = () => {
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     window.location.href = SocialLinks.Patreon;
   }, []);
 
