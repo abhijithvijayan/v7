@@ -58,13 +58,14 @@ export default function Home(): JSX.Element {
                 <ul>
                   <li>
                     <a
+                      className={"hover:bg-gray-100"}
                       href={SocialLinks.GitHubSponsors}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="github" className={"github"} />
+                      <Icon name="github" />
                       <div className={"text-wrapper"}>
-                        <p className={"github"}>
+                        <p className={"hover:text-gray-800 hover:text-gray-800"}>
                           GitHub Sponsors
                         </p>
                       </div>
@@ -72,13 +73,14 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
+                      className={"hover:bg-gray-100"}
                       href={Routes.OpenCollective}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
                       <Icon name="circle-notch" className={"icon"} />
                       <div className={"text-wrapper"}>
-                        <p>
+                        <p className={"hover:text-gray-800"}>
                           Open Collective
                         </p>
                       </div>
@@ -86,13 +88,14 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
+                      className={"hover:bg-gray-100"}
                       href={Routes.Patreon}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
                       <Icon name="patreon" className={"icon"} />
                       <div className={"text-wrapper"}>
-                        <p>
+                        <p className={"hover:text-gray-800"}>
                           Patreon
                         </p>
                       </div>
@@ -107,13 +110,14 @@ export default function Home(): JSX.Element {
                 <ul>
                   <li>
                     <a
+                      className={"hover:bg-gray-100"}
                       href={Routes.PayPal}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
                       <Icon name="paypal" className={"icon"} />
                       <div className={"text-wrapper"}>
-                        <p>
+                        <p className={"hover:text-gray-800"}>
                           My PayPal
                         </p>
                       </div>
@@ -121,13 +125,14 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
+                      className={"hover:bg-gray-100"}
                       href={Routes.BuyMeACoffee}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
                       <Icon name="coffee" className={"icon"} />
                       <div className={"text-wrapper"}>
-                        <p>
+                        <p className={"hover:text-gray-800"}>
                           BuyMeACoffee.com
                         </p>
                       </div>
@@ -140,6 +145,7 @@ export default function Home(): JSX.Element {
             <CardFooter>
               <Link href="/">
                 <a
+                  className={"hover:text-gray-800"}
                   title="Go Back"
                 >
                   <Icon name="arrow-left" />

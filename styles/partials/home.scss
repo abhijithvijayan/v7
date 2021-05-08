@@ -45,23 +45,23 @@
                     @apply ml-4 cursor-pointer;
 
                     .github {
-                      @apply hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full;
                     }
 
                     .twitter {
-                      @apply hover:text-blue-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full;
                     }
 
                     .linkedin {
-                      @apply hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full;
                     }
 
                     .pencil {
-                      @apply hover:text-orange-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full;
                     }
 
                     .donation {
-                      @apply hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full;
                     }
                   }
 
@@ -81,7 +81,7 @@
                 @apply text-sm text-center text-gray-600 select-none;
 
                 .email {
-                  @apply hover:border-b-2 hover:text-gray-700 font-semibold text-gray-600;
+                  @apply font-semibold text-gray-600;
                 }
               }
             }

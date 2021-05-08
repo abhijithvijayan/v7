@@ -51,7 +51,7 @@
                 ul {
                   li {
                     a {
-                      @apply hover:bg-gray-100 flex items-center px-4 py-1;
+                      @apply flex items-center px-4 py-1;
 
                       .icon {
                         @apply text-gray-800;
@@ -61,11 +61,7 @@
                         @apply pl-3;
 
                         p {
-                          @apply my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800;
-                        }
-
-                        .github {
-                          @apply hover:text-gray-800;
+                          @apply my-0 text-sm font-medium leading-none text-gray-700;
                         }
                       }
                     }
@@ -80,7 +76,7 @@
 
             .card-footer {
               a {
-                @apply hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full cursor-pointer;
+                @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full cursor-pointer;
               }
             }
           }

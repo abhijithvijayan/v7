@@ -20,10 +20,10 @@ export const CardFooter: React.FC<Props> = ({children}) => {
 
 const Card: React.FC<Props> = ({children}) => {
   return (
-      <div className={"card-wrapper"}>
+      <div className={"card-wrapper container"}>
         <div className={"card-content-wrapper"}>
           <div className={"content-wrapper"}>
-            <div className={"content"}>
+            <div className={"content md:max-w-sm"}>
               {children}
             </div>
           </div>
