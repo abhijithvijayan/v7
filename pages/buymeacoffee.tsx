@@ -3,7 +3,7 @@ import * as React from 'react';
 import {SocialLinks} from '../config';
 
 const BuyMeACoffeeRedirect: React.FC = () => {
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     window.location.href = SocialLinks.BuyMeACoffee;
   }, []);
 

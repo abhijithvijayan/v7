@@ -15,7 +15,7 @@ import '../styles/main.scss';
 import {SiteProps} from '../config';
 
 function App({Component, pageProps}: AppProps): JSX.Element {
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     // eslint-disable-next-line no-console
     console.emoji('🦄', "Wouldn't you like to know!");
   }, []);
