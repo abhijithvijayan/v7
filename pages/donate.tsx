@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
               <div className={'body-content-wrapper'}>
                 <p className={'long-tagline'}>
                   I am a student, tutor, engineer and a maker to various
-                  projects. For 2+ years, I have been working on Open Source.
+                  projects. For 3+ years, I have been working on Open Source.
                   <br />
                   <br />
                   If you use any of my projects or like what I&#39;m doing,
