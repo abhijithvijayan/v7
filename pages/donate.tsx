@@ -11,15 +11,13 @@ export default function Home(): JSX.Element {
   return (
     <BodyWrapper>
       <section id="donate">
-        <div className={"wrapper"}>
+        <div className={'wrapper'}>
           <Card>
             <CardHeader>
-              <div className={"header-wrapper"}>
-                <h2 className={"main-text"}>
-                  Donate ❤️
-                </h2>
-                <div className={"subsection"}>
-                  <div className={"image-wrapper"}>
+              <div className={'header-wrapper'}>
+                <h2 className={'main-text'}>Donate ❤️</h2>
+                <div className={'subsection'}>
+                  <div className={'image-wrapper'}>
                     <img
                       alt="..."
                       src={SiteProps.Profile}
@@ -32,8 +30,8 @@ export default function Home(): JSX.Element {
             </CardHeader>
 
             <CardBody>
-              <div className={"body-content-wrapper"}>
-                <p className={"long-tagline"}>
+              <div className={'body-content-wrapper'}>
+                <p className={'long-tagline'}>
                   I am a student, tutor, engineer and a maker to various
                   projects. For 2+ years, I have been working on Open Source.
                   <br />
@@ -52,20 +50,20 @@ export default function Home(): JSX.Element {
                   <br />
                   <strong>Thank you for your support! 🙌</strong>
                 </p>
-                <h3 className={"sub-header"}>
-                  Monthly Donations
-                </h3>
+                <h3 className={'sub-header'}>Monthly Donations</h3>
                 <ul>
                   <li>
                     <a
-                      className={"hover:bg-gray-100"}
+                      className={'hover:bg-gray-100'}
                       href={SocialLinks.GitHubSponsors}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
                       <Icon name="github" />
-                      <div className={"text-wrapper"}>
-                        <p className={"hover:text-gray-800 hover:text-gray-800"}>
+                      <div className={'text-wrapper'}>
+                        <p
+                          className={'hover:text-gray-800 hover:text-gray-800'}
+                        >
                           GitHub Sponsors
                         </p>
                       </div>
@@ -73,66 +71,58 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
-                      className={"hover:bg-gray-100"}
+                      className={'hover:bg-gray-100'}
                       href={Routes.OpenCollective}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="circle-notch" className={"icon"} />
-                      <div className={"text-wrapper"}>
-                        <p className={"hover:text-gray-800"}>
-                          Open Collective
-                        </p>
+                      <Icon name="circle-notch" className={'icon'} />
+                      <div className={'text-wrapper'}>
+                        <p className={'hover:text-gray-800'}>Open Collective</p>
                       </div>
                     </a>
                   </li>
                   <li>
                     <a
-                      className={"hover:bg-gray-100"}
+                      className={'hover:bg-gray-100'}
                       href={Routes.Patreon}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="patreon" className={"icon"} />
-                      <div className={"text-wrapper"}>
-                        <p className={"hover:text-gray-800"}>
-                          Patreon
-                        </p>
+                      <Icon name="patreon" className={'icon'} />
+                      <div className={'text-wrapper'}>
+                        <p className={'hover:text-gray-800'}>Patreon</p>
                       </div>
                     </a>
                   </li>
                 </ul>
 
-                <h3 className={"sub-header"}>
-                  One-time Donations
-                </h3>
+                <h3 className={'sub-header'}>One-time Donations</h3>
 
                 <ul>
                   <li>
                     <a
-                      className={"hover:bg-gray-100"}
+                      className={'hover:bg-gray-100'}
                       href={Routes.PayPal}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="paypal" className={"icon"} />
-                      <div className={"text-wrapper"}>
-                        <p className={"hover:text-gray-800"}>
-                          My PayPal
-                        </p>
+                      <Icon name="paypal" className={'icon'} />
+                      <div className={'text-wrapper'}>
+                        <p className={'hover:text-gray-800'}>My PayPal</p>
                       </div>
                     </a>
                   </li>
                   <li>
                     <a
-                      className={"hover:bg-gray-100"}
+                      className={'hover:bg-gray-100'}
                       href={Routes.BuyMeACoffee}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="coffee" className={"icon"} />
-                      <div className={"text-wrapper"}>
-                        <p className={"hover:text-gray-800"}>
+                      <Icon name="coffee" className={'icon'} />
+                      <div className={'text-wrapper'}>
+                        <p className={'hover:text-gray-800'}>
                           BuyMeACoffee.com
                         </p>
                       </div>
@@ -145,7 +135,7 @@ export default function Home(): JSX.Element {
             <CardFooter>
               <Link href="/">
                 <a
-                  className={"hover:text-gray-800 text-gray-700"}
+                  className={'hover:text-gray-800 text-gray-700'}
                   title="Go Back"
                 >
                   <Icon name="arrow-left" />
