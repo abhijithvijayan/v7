@@ -1,0 +1,7 @@
+.container {
+  @apply relative min-h-screen;
+
+  .children {
+    @apply w-full min-h-screen;
+  }
+}

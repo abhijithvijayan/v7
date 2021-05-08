@@ -12,7 +12,10 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+@import "partials/container";
+@import "partials/card";
 @import "partials/home";
+@import "partials/donate";
 
 /* Start purging... */
 @tailwind utilities;

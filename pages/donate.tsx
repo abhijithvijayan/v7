@@ -1,4 +1,4 @@
-import 'twin.macro';
+import * as React from 'react';
 import Link from 'next/link';
 
 import Icon from '../components/Icon';
@@ -10,19 +10,18 @@ import {SiteProps, SocialLinks, Routes} from '../config';
 export default function Home(): JSX.Element {
   return (
     <BodyWrapper>
-      <section id="donate" tw="block">
-        <div tw="flex flex-col justify-center w-full h-full min-h-screen bg-gray-900">
-          <Card tw="w-full mx-6">
+      <section id="donate">
+        <div className={"wrapper"}>
+          <Card>
             <CardHeader>
-              <div tw="py-3">
-                <h2 tw="text-3xl font-semibold mx-6 text-gray-800 mt-2 mb-1">
+              <div className={"header-wrapper"}>
+                <h2 className={"main-text"}>
                   Donate ❤️
                 </h2>
-                <div tw="relative flex flex-wrap mx-6 border-t">
-                  <div tw="absolute right-0 w-10 mx-auto mr-2 -my-5 overflow-hidden border-4 border-white rounded-full shadow">
+                <div className={"subsection"}>
+                  <div className={"image-wrapper"}>
                     <img
-                      alt="unicorn"
-                      tw="object-cover w-full h-full"
+                      alt="..."
                       src={SiteProps.Profile}
                       width={999}
                       height={1008}
@@ -31,9 +30,10 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
             </CardHeader>
+
             <CardBody>
-              <div tw="mx-4 my-2">
-                <p tw="text-gray-700">
+              <div className={"body-content-wrapper"}>
+                <p className={"long-tagline"}>
                   I am a student, tutor, engineer and a maker to various
                   projects. For 2+ years, I have been working on Open Source.
                   <br />
@@ -42,7 +42,6 @@ export default function Home(): JSX.Element {
                   please consider backing me with simple donations so that I can
                   continue{' '}
                   <a
-                    tw="border-b-2 border-gray-200"
                     href={Routes.GitHub}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
@@ -53,20 +52,19 @@ export default function Home(): JSX.Element {
                   <br />
                   <strong>Thank you for your support! 🙌</strong>
                 </p>
-                <h3 tw="text-2xl font-semibold text-gray-800 mt-2">
+                <h3 className={"sub-header"}>
                   Monthly Donations
                 </h3>
                 <ul>
                   <li>
                     <a
-                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
                       href={SocialLinks.GitHubSponsors}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="github" tw="text-gray-800" />
-                      <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800 hover:text-gray-800">
+                      <Icon name="github" className={"github"} />
+                      <div className={"text-wrapper"}>
+                        <p className={"github"}>
                           GitHub Sponsors
                         </p>
                       </div>
@@ -74,14 +72,13 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
-                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
                       href={Routes.OpenCollective}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="circle-notch" tw="text-gray-800" />
-                      <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
+                      <Icon name="circle-notch" className={"icon"} />
+                      <div className={"text-wrapper"}>
+                        <p>
                           Open Collective
                         </p>
                       </div>
@@ -89,34 +86,34 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
-                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
                       href={Routes.Patreon}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="patreon" tw="text-gray-800" />
-                      <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
+                      <Icon name="patreon" className={"icon"} />
+                      <div className={"text-wrapper"}>
+                        <p>
                           Patreon
                         </p>
                       </div>
                     </a>
                   </li>
                 </ul>
-                <h3 tw="text-2xl font-semibold text-gray-800 mt-2">
+
+                <h3 className={"sub-header"}>
                   One-time Donations
                 </h3>
+
                 <ul>
                   <li>
                     <a
-                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
                       href={Routes.PayPal}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="paypal" tw="text-gray-800" />
-                      <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
+                      <Icon name="paypal" className={"icon"} />
+                      <div className={"text-wrapper"}>
+                        <p>
                           My PayPal
                         </p>
                       </div>
@@ -124,14 +121,13 @@ export default function Home(): JSX.Element {
                   </li>
                   <li>
                     <a
-                      tw="hover:bg-gray-100 flex items-center px-4 py-1"
                       href={Routes.BuyMeACoffee}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
-                      <Icon name="coffee" tw="text-gray-800" />
-                      <div tw="pl-3">
-                        <p tw="my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800">
+                      <Icon name="coffee" className={"icon"} />
+                      <div className={"text-wrapper"}>
+                        <p>
                           BuyMeACoffee.com
                         </p>
                       </div>
@@ -140,10 +136,10 @@ export default function Home(): JSX.Element {
                 </ul>
               </div>
             </CardBody>
+
             <CardFooter>
               <Link href="/">
                 <a
-                  tw="hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full cursor-pointer"
                   title="Go Back"
                 >
                   <Icon name="arrow-left" />

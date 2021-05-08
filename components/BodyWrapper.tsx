@@ -1,11 +1,10 @@
-import 'twin.macro';
-import React from 'react';
+import * as React from 'react';
 
-const BodyWrapper: React.FC = ({children}) => {
+const BodyWrapper: React.FC<{children: React.ReactNode}> = ({children}) => {
   return (
     <>
-      <div tw="relative min-h-screen">
-        <main tw="w-full min-h-screen">{children}</main>
+      <div className={"container"}>
+        <main className={"children"}>{children}</main>
       </div>
     </>
   );

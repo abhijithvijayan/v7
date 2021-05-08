@@ -5,17 +5,9 @@
     @apply flex flex-col justify-center w-full h-full min-h-screen bg-gray-900;
 
     .card-wrapper {
-      @apply container h-full px-4 mx-auto;
-
       .card-content-wrapper {
-        @apply flex items-center content-center justify-center h-full;
-
         .content-wrapper {
-          @apply w-full px-4;
-
           .content {
-            @apply md:max-w-sm items-center justify-center w-full pb-6 mx-auto my-12 overflow-hidden bg-white rounded-lg shadow-sm;
-
             .card-header {
               .cover-image {
                 @apply relative h-40;
@@ -35,8 +27,6 @@
             }
 
             .card-body {
-              @apply px-2;
-
               .body-content-wrapper {
                 @apply mt-16 mb-6;
 
@@ -83,8 +73,6 @@
             }
 
             .card-footer {
-              @apply flex flex-wrap pt-3 mx-6 border-t;
-
               .subtext {
                 @apply w-full font-normal text-center text-gray-700 select-none;
               }

@@ -1,0 +1,91 @@
+#donate {
+  @apply block;
+
+  .wrapper {
+    @apply flex flex-col justify-center w-full h-full min-h-screen bg-gray-900;
+
+    .card-wrapper {
+      @apply w-full mx-6;
+
+      .card-content-wrapper {
+        .content-wrapper {
+          .content {
+            .card-header {
+              .header-wrapper {
+                @apply py-3;
+
+                .main-text {
+                  @apply text-3xl font-semibold mx-6 text-gray-800 mt-2 mb-1;
+                }
+
+                .subsection {
+                  @apply relative flex flex-wrap mx-6 border-t;
+
+                  .image-wrapper {
+                    @apply absolute right-0 w-10 mx-auto mr-2 -my-5 overflow-hidden border-4 border-white rounded-full shadow;
+
+                    img {
+                      @apply object-cover w-full h-full;
+                    }
+                  }
+                }
+              }
+            }
+
+            .card-body {
+              .body-content-wrapper {
+                @apply mx-4 my-2;
+
+                .long-tagline {
+                  @apply text-gray-700;
+
+                  > a {
+                    @apply border-b-2 border-gray-200;
+                  }
+                }
+
+                .sub-header {
+                  @apply text-2xl font-semibold text-gray-800 mt-2;
+                }
+
+                ul {
+                  li {
+                    a {
+                      @apply hover:bg-gray-100 flex items-center px-4 py-1;
+
+                      .icon {
+                        @apply text-gray-800;
+                      }
+
+                      .text-wrapper {
+                        @apply pl-3;
+
+                        p {
+                          @apply my-0 text-sm font-medium leading-none text-gray-700 hover:text-gray-800;
+                        }
+
+                        .github {
+                          @apply hover:text-gray-800;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .sub-header {
+                  @apply text-2xl font-semibold text-gray-800 mt-2;
+                }
+              }
+            }
+
+            .card-footer {
+              a {
+                @apply hover:text-gray-800 inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full cursor-pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
