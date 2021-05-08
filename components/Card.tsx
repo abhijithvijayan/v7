@@ -23,7 +23,7 @@ const Card: React.FC<Props> = ({children}) => {
       <div className={"container card-wrapper"}>
         <div className={"card-content-wrapper"}>
           <div className={"content-wrapper"}>
-            <div className={"content md:max-w-sm"}>
+            <div className={"md:max-w-sm content"}>
               {children}
             </div>
           </div>

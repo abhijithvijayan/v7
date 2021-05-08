@@ -74,7 +74,7 @@
 
             .card-footer {
               a {
-                @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full cursor-pointer;
+                @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug uppercase bg-white border rounded-full cursor-pointer;
               }
             }
           }

@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="github"
-                      className={"github hover:text-gray-800"}
+                      className={"hover:text-gray-800 text-gray-700 github"}
                     />
                   </a>
                   <a
@@ -57,7 +57,7 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="twitter"
-                      className={"twitter hover:text-blue-800"}
+                      className={"hover:text-blue-800 text-blue-700 twitter"}
                     />
                   </a>
                   <a
@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="linkedin"
-                      className={"linkedin hover:text-gray-800"}
+                      className={"hover:text-gray-800 text-gray-700 linkedin"}
                     />
                   </a>
                   <a
@@ -79,14 +79,14 @@ export default function Home(): JSX.Element {
                   >
                     <Icon
                       name="pencil"
-                      className={"pencil hover:text-orange-800"}
+                      className={"hover:text-orange-800 text-orange-500 pencil"}
                     />
                   </a>
                   <Link href={Routes.Donate}>
                     <a title="Donate">
                       <Icon
                         name="donate"
-                        className={"donation hover:text-gray-800"}
+                        className={"hover:text-gray-800 text-gray-700 donation"}
                       />
                     </a>
                   </Link>
@@ -103,7 +103,7 @@ export default function Home(): JSX.Element {
                 My inbox is always open whether for a potential project or just
                 to say hi, so here is my{' '}
                 <a
-                  className={"email hover:border-b-2 hover:text-gray-700"}
+                  className={"hover:text-gray-700 text-gray-600 email"}
                   href={`mailto:${SiteProps.Email}`}
                   target="_blank"
                   rel="nofollow noopener noreferrer"

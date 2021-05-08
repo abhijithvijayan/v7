@@ -45,23 +45,23 @@
                     @apply ml-4 cursor-pointer;
 
                     .github {
-                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-gray-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug uppercase bg-gray-200 rounded-full;
                     }
 
                     .twitter {
-                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-blue-700 uppercase bg-blue-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug uppercase bg-blue-200 rounded-full;
                     }
 
                     .linkedin {
-                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-green-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug uppercase bg-green-200 rounded-full;
                     }
 
                     .pencil {
-                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-orange-500 uppercase bg-teal-200 rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug uppercase bg-teal-200 rounded-full;
                     }
 
                     .donation {
-                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug text-gray-700 uppercase bg-white border rounded-full;
+                      @apply inline-flex items-center px-3 py-1 text-xs font-bold leading-snug uppercase bg-white border rounded-full;
                     }
                   }
 
@@ -81,7 +81,11 @@
                 @apply text-sm text-center text-gray-600 select-none;
 
                 .email {
-                  @apply font-semibold text-gray-600;
+                  @apply font-semibold;
+
+                  &:hover {
+                    @apply border-b-2;
+                  }
                 }
               }
             }

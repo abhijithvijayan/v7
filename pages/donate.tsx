@@ -145,7 +145,7 @@ export default function Home(): JSX.Element {
             <CardFooter>
               <Link href="/">
                 <a
-                  className={"hover:text-gray-800"}
+                  className={"hover:text-gray-800 text-gray-700"}
                   title="Go Back"
                 >
                   <Icon name="arrow-left" />
