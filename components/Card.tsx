@@ -1,5 +1,4 @@
 import * as React from 'react';
-import 'twin.macro';
 
 type Props = {children: React.ReactNode}
 

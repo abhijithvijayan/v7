@@ -6,41 +6,40 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from 'next/document';
-import {ServerStyleSheet} from 'styled-components';
 
 class AppDocument extends Document {
   static async getInitialProps(
-    ctx: DocumentContext
+      ctx: DocumentContext
   ): Promise<DocumentInitialProps> {
-    const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = (): ReturnType<typeof ctx.renderPage> =>
-        originalRenderPage({
-          // useful for wrapping the whole react tree
-          // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-          enhanceApp: (App) => (props) =>
-            // eslint-disable-next-line react/jsx-props-no-spreading
-            sheet.collectStyles(<App {...props} />),
-          // useful for wrapping in a per-page basis
-          enhanceComponent: (Component) => Component,
-        });
+          originalRenderPage({
+            // useful for wrapping the whole react tree
+            // eslint-disable-next-line react/display-name
+            enhanceApp: (App) => (props): JSX.Element => (
+                <>
+                  <App {...props} />
+                </>
+            ),
+            // useful for wrapping in a per-page basis
+            // eslint-disable-next-line react/display-name
+            enhanceComponent: (Component) => (props): JSX.Element => (
+                <>
+                  <Component {...props} />
+                </>
+            ),
+          });
 
       // Run the parent `getInitialProps`, it now includes the custom `renderPage`
       const initialProps = await Document.getInitialProps(ctx);
 
       return {
         ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        ),
       };
     } finally {
-      sheet.seal();
+      //
     }
   }
 
