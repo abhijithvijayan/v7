@@ -3,6 +3,10 @@ module.exports = {
     autoPrerender: false,
   },
 
+  future: {
+    webpack5: true,
+  },
+
   exportPathMap() {
     return {
       '/': {page: '/'},
