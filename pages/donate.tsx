@@ -52,23 +52,6 @@ export default function Home(): JSX.Element {
                 </p>
                 <h3 className={'sub-header'}>Monthly Donations</h3>
                 <ul>
-<!--               <li>
-                    <a
-                      className={'hover:bg-gray-100'}
-                      href={SocialLinks.GitHubSponsors}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                    >
-                      <Icon name="github" />
-                      <div className={'text-wrapper'}>
-                        <p
-                          className={'hover:text-gray-800 hover:text-gray-800'}
-                        >
-                          GitHub Sponsors
-                        </p>
-                      </div>
-                    </a>
-                  </li> -->
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
