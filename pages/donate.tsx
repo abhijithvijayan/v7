@@ -5,7 +5,7 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
-import {SiteProps, SocialLinks, Routes} from '../config';
+import {SiteProps, Routes} from '../config';
 
 export default function Home(): JSX.Element {
   return (
