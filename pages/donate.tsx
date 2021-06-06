@@ -52,7 +52,7 @@ export default function Home(): JSX.Element {
                 </p>
                 <h3 className={'sub-header'}>Monthly Donations</h3>
                 <ul>
-                  <li>
+<!--               <li>
                     <a
                       className={'hover:bg-gray-100'}
                       href={SocialLinks.GitHubSponsors}
@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
                         </p>
                       </div>
                     </a>
-                  </li>
+                  </li> -->
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
