@@ -11,7 +11,7 @@
     "url": "https://abhijithvijayan.in"
   },
   "engines": {
-    "node": "16.18.1"
+    "node": "^16"
   },
   "scripts": {
     "dev": "next dev",
