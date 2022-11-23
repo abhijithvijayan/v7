@@ -1,5 +1,5 @@
 <h1 align="center">V7</h1>
-<p align="center">Source code for my personal website build with Next.js</p>
+<p align="center">Source code for my personal website build with Next.js Hosted on Vercel</p>
 <p align="center">https://abhijithvijayan.in</p>
 <div align="center">
   <a href="https://app.netlify.com/sites/abhijithvijayan/deploys">
