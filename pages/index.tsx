@@ -85,7 +85,7 @@ const HomePage: React.FC<HomePageProps> = ({redirectAppURL}) => {
                     />
                   </a>
                   <Link
-                    href={getFullLink(redirectAppURL, Routes.Donate)}
+                    href={Routes.Donate}
                     title="Donate"
                     legacyBehavior={false}
                   >
