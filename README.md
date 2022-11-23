@@ -33,13 +33,15 @@
 
 ## 🚀 Quick Start
 
-Ensure you have [Node.js](https://nodejs.org) 10 or later installed. Then run the following:
+Ensure you have [Node.js](https://nodejs.org) 16 or later installed. Then run the following:
 
 - `yarn install` to install dependencies.
 - `yarn dev` to start the development server.
 - `yarn build` build the files for production.
 - `yarn export` to use Next.js static exports.
 - `yarn deploy:static` runs `build` and `export` commands at once.
+
+#### Pass `NEXT_PUBLIC_REDIRECT_APP_URL` as environmental variable
 
 ## Issues
 

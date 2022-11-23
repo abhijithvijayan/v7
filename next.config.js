@@ -1,4 +1,3 @@
-
 /**
  * @type {import('next').NextConfig}
  * */
@@ -21,15 +20,15 @@ const nextConfig = {
   // The webpack function is executed twice, once for the server and once for the client.
   // This allows you to distinguish between client and server configuration using the isServer property.
   webpack(
-      config,
-      {buildId, dev, isServer, defaultLoaders, nextRuntime, webpack}
+    config,
+    {buildId, dev, isServer, defaultLoaders, nextRuntime, webpack}
   ) {
     // Important: return the modified config
 
     return config;
   },
 
-  exportPathMap() {
+  async exportPathMap(defaultPathMap, {dev, dir, outDir, distDir, buildId}) {
     return {
       '/': {page: '/'},
       '/donate': {page: '/donate'},

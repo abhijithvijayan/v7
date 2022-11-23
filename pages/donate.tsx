@@ -5,9 +5,11 @@ import Icon from '../components/Icon';
 import BodyWrapper from '../components/BodyWrapper';
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 
-import {SiteProps, Routes} from '../config';
+import {SiteProps, Routes, getFullLink} from '../config';
 
-export default function Home(): JSX.Element {
+type DonatePageProps = Props['props'];
+
+const DonatePage: React.FC<DonatePageProps> = ({redirectAppURL}) => {
   return (
     <BodyWrapper>
       <section id="donate">
@@ -40,7 +42,7 @@ export default function Home(): JSX.Element {
                   please consider backing me with simple donations so that I can
                   continue{' '}
                   <a
-                    href={Routes.GitHub}
+                    href={getFullLink(redirectAppURL, Routes.GitHub)}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -55,7 +57,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
-                      href={Routes.OpenCollective}
+                      href={getFullLink(redirectAppURL, Routes.OpenCollective)}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -68,7 +70,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
-                      href={Routes.Patreon}
+                      href={getFullLink(redirectAppURL, Routes.Patreon)}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -86,7 +88,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
-                      href={Routes.PayPal}
+                      href={getFullLink(redirectAppURL, Routes.PayPal)}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -99,7 +101,7 @@ export default function Home(): JSX.Element {
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
-                      href={Routes.BuyMeACoffee}
+                      href={getFullLink(redirectAppURL, Routes.BuyMeACoffee)}
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
@@ -130,4 +132,23 @@ export default function Home(): JSX.Element {
       </section>
     </BodyWrapper>
   );
+};
+
+type Props = {
+  props: {
+    redirectAppURL: string | undefined;
+  };
+};
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side
+export async function getStaticProps(context): Promise<Props> {
+  return {
+    props: {
+      // eslint-disable-next-line no-undef
+      redirectAppURL: process.env.NEXT_PUBLIC_REDIRECT_APP_URL,
+    },
+  };
 }
+
+export default DonatePage;

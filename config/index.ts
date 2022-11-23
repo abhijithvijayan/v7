@@ -1,3 +1,5 @@
+import {isEmpty, isString} from '@abhijithvijayan/ts-utils';
+
 export enum SiteProps {
   Name = 'Abhijith Vijayan',
   Email = 'email@abhijithvijayan.in',
@@ -32,3 +34,14 @@ export const Routes = {
   BuyMeACoffee: '/buymeacoffee',
   OpenCollective: '/opencollective',
 } as const;
+
+export const getFullLink = (
+  prefix: string | undefined,
+  path: string
+): string => {
+  if (isString(prefix) && !isEmpty(prefix)) {
+    return prefix + path;
+  }
+
+  return path;
+};
