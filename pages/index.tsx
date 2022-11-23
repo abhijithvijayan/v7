@@ -1,12 +1,15 @@
+import * as React from 'react';
 import Link from 'next/link';
 
 import Card, {CardHeader, CardBody, CardFooter} from '../components/Card';
 import BodyWrapper from '../components/BodyWrapper';
 import Icon from '../components/Icon';
 
-import {SiteProps, Routes} from '../config';
+import {SiteProps, Routes, getFullLink} from '../config';
 
-export default function Home(): JSX.Element {
+type HomePageProps = Props['props'];
+
+const HomePage: React.FC<HomePageProps> = ({redirectAppURL}) => {
   return (
     <BodyWrapper>
       <section id="hero">
@@ -33,14 +36,12 @@ export default function Home(): JSX.Element {
 
             <CardBody>
               <div className={'body-content-wrapper'}>
-                <h1 className={'title'}>Abhijith Vijayan</h1>
-                <p className={'tagline'}>
-                  I build things that aren&#39;t evil.
-                </p>
+                <h1 className={'title'}>{SiteProps.Name}</h1>
+                <p className={'tagline'}>{SiteProps.Description}</p>
                 <div className={'social-links'}>
                   <a
                     title="Code"
-                    href={Routes.GitHub}
+                    href={getFullLink(redirectAppURL, Routes.GitHub)}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -51,7 +52,7 @@ export default function Home(): JSX.Element {
                   </a>
                   <a
                     title="Tweets"
-                    href={Routes.Twitter}
+                    href={getFullLink(redirectAppURL, Routes.Twitter)}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -62,7 +63,7 @@ export default function Home(): JSX.Element {
                   </a>
                   <a
                     title="Hire"
-                    href={Routes.LinkedIn}
+                    href={getFullLink(redirectAppURL, Routes.LinkedIn)}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -72,8 +73,8 @@ export default function Home(): JSX.Element {
                     />
                   </a>
                   <a
-                    title="Synapse"
-                    href={Routes.Synapse}
+                    title="Medium"
+                    href={getFullLink(redirectAppURL, Routes.Medium)}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                   >
@@ -83,7 +84,7 @@ export default function Home(): JSX.Element {
                     />
                   </a>
                   <Link
-                    href={Routes.Donate}
+                    href={getFullLink(redirectAppURL, Routes.Donate)}
                     title="Donate"
                     legacyBehavior={false}
                   >
@@ -117,4 +118,23 @@ export default function Home(): JSX.Element {
       </section>
     </BodyWrapper>
   );
+};
+
+type Props = {
+  props: {
+    redirectAppURL: string | undefined;
+  };
+};
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side
+export async function getStaticProps(context): Promise<Props> {
+  return {
+    props: {
+      // eslint-disable-next-line no-undef
+      redirectAppURL: process.env.NEXT_PUBLIC_REDIRECT_APP_URL,
+    },
+  };
 }
+
+export default HomePage;

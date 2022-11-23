@@ -57,6 +57,19 @@ const DonatePage: React.FC<DonatePageProps> = ({redirectAppURL}) => {
                   <li>
                     <a
                       className={'hover:bg-gray-100'}
+                      href={getFullLink(redirectAppURL, Routes.GitHubSponsors)}
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                    >
+                      <Icon name="github" className={'icon'} />
+                      <div className={'text-wrapper'}>
+                        <p className={'hover:text-gray-800'}>GitHub Sponsors</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className={'hover:bg-gray-100'}
                       href={getFullLink(redirectAppURL, Routes.OpenCollective)}
                       target="_blank"
                       rel="nofollow noopener noreferrer"

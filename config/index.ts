@@ -25,8 +25,9 @@ export enum SiteProps {
 export const Routes = {
   Root: '/',
   Donate: '/donate',
-  Synapse: '/synapse',
+  Medium: '/medium',
   GitHub: '/github',
+  GitHubSponsors: '/githubsponsors',
   Twitter: '/twitter',
   LinkedIn: '/linkedin',
   Patreon: '/patreon',
