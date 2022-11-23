@@ -1,3 +1,4 @@
+import {AppContext} from 'next/app';
 import * as React from 'react';
 import Link from 'next/link';
 
@@ -122,17 +123,17 @@ const HomePage: React.FC<HomePageProps> = ({redirectAppURL}) => {
 
 type Props = {
   props: {
-    redirectAppURL: string | undefined;
+    redirectAppURL: string | null;
   };
 };
 
 // This function gets called at build time on server-side.
 // It won't be called on client-side
-export async function getStaticProps(context): Promise<Props> {
+export async function getStaticProps(_: AppContext): Promise<Props> {
   return {
     props: {
       // eslint-disable-next-line no-undef
-      redirectAppURL: process.env.NEXT_PUBLIC_REDIRECT_APP_URL,
+      redirectAppURL: process.env.NEXT_PUBLIC_REDIRECT_APP_URL ?? null,
     },
   };
 }

@@ -37,7 +37,7 @@ export const Routes = {
 } as const;
 
 export const getFullLink = (
-  prefix: string | undefined,
+  prefix: string | undefined | null,
   path: string
 ): string => {
   if (isString(prefix) && !isEmpty(prefix)) {
