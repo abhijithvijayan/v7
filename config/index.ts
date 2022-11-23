@@ -20,7 +20,7 @@ export enum SiteProps {
   Cover = '/images/activity.png',
 }
 
-export const Routes ={
+export const Routes = {
   Root: '/',
   Donate: '/donate',
   Synapse: '/synapse',
@@ -31,4 +31,4 @@ export const Routes ={
   PayPal: '/paypal',
   BuyMeACoffee: '/buymeacoffee',
   OpenCollective: '/opencollective',
-} as const
+} as const;

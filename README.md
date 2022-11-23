@@ -2,10 +2,6 @@
 <p align="center">Source code for my personal website build with Next.js</p>
 <p align="center">https://abhijithvijayan.in</p>
 <div align="center">
-  <a href="https://app.netlify.com/sites/abhijithvijayan/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/495cca9f-2238-4c95-9d85-53aa03062938/deploy-status" alt="Netlify Build" />
-  </a>
-  </a>
   <a href="https://david-dm.org/abhijithvijayan/v7">
     <img src="https://img.shields.io/david/abhijithvijayan/v7.svg?colorB=orange" alt="DEPENDENCIES" />
   </a>

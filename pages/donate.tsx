@@ -116,13 +116,13 @@ export default function Home(): JSX.Element {
             </CardBody>
 
             <CardFooter>
-              <Link href="/">
-                <a
-                  className={'hover:text-gray-800 text-gray-700'}
-                  title="Go Back"
-                >
-                  <Icon name="arrow-left" />
-                </a>
+              <Link
+                href="/"
+                className={'hover:text-gray-800 text-gray-700'}
+                title="Go Back"
+                legacyBehavior={false}
+              >
+                <Icon name="arrow-left" />
               </Link>
             </CardFooter>
           </Card>

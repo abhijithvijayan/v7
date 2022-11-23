@@ -6,7 +6,11 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "globals": {
+    "JSX": "readonly"
+  },
   "rules": {
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "react/no-unescaped-entities": "warn"
   }
 }

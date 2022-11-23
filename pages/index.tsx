@@ -82,13 +82,15 @@ export default function Home(): JSX.Element {
                       className={'hover:text-orange-800 text-orange-500 pencil'}
                     />
                   </a>
-                  <Link href={Routes.Donate}>
-                    <a title="Donate">
-                      <Icon
-                        name="donate"
-                        className={'hover:text-gray-800 text-gray-700 donation'}
-                      />
-                    </a>
+                  <Link
+                    href={Routes.Donate}
+                    title="Donate"
+                    legacyBehavior={false}
+                  >
+                    <Icon
+                      name="donate"
+                      className={'hover:text-gray-800 text-gray-700 donation'}
+                    />
                   </Link>
                 </div>
               </div>

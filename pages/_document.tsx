@@ -18,18 +18,24 @@ class AppDocument extends Document {
         originalRenderPage({
           // useful for wrapping the whole react tree
           // eslint-disable-next-line react/display-name
-          enhanceApp: (App) => (props): JSX.Element => (
-            <>
-              <App {...props} />
-            </>
-          ),
+          enhanceApp:
+            (App) =>
+            (props): JSX.Element =>
+              (
+                <>
+                  <App {...props} />
+                </>
+              ),
           // useful for wrapping in a per-page basis
           // eslint-disable-next-line react/display-name
-          enhanceComponent: (Component) => (props): JSX.Element => (
-            <>
-              <Component {...props} />
-            </>
-          ),
+          enhanceComponent:
+            (Component) =>
+            (props): JSX.Element =>
+              (
+                <>
+                  <Component {...props} />
+                </>
+              ),
         });
 
       // Run the parent `getInitialProps`, it now includes the custom `renderPage`

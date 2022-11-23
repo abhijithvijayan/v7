@@ -11,10 +11,12 @@
     "allowJs": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
+    "additional.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "next.config.js"
