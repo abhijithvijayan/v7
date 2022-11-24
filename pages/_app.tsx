@@ -5,6 +5,7 @@
  */
 
 import 'emoji-log';
+import {Analytics} from '@vercel/analytics/react';
 import {AppProps} from 'next/app';
 import * as React from 'react';
 import Head from 'next/head';
@@ -92,8 +93,10 @@ function App({Component, pageProps}: AppProps): JSX.Element {
         <meta itemProp="image" content={SiteProps.Thumbnail} />
         <meta itemProp="keywords" content={SiteProps.Keywords} />
       </Head>
+
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
