@@ -112,6 +112,11 @@ const HomePage: React.FC<HomePageProps> = ({redirectAppURL}) => {
                 >
                   Email !
                 </a>
+                <p className={'quote'}>
+                  "Life is like a game of chess, you can't take moves back. All
+                  you can do is look at the board you are in, look at the
+                  position you are in and make the best moves possible."
+                </p>
               </p>
             </CardFooter>
           </Card>
