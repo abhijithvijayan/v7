@@ -58,7 +58,7 @@ class AppDocument extends Document {
           <Main />
           <NextScript />
 
-          <script src="https://app.embed.im/snow.js" defer />
+          <script src="/scripts/snow.js" async />
         </body>
       </Html>
     );
