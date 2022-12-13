@@ -3,13 +3,15 @@
 *
 * */
 (() => {
-    let embedimSnow = document.getElementById('embedim--snow');
-    if (!embedimSnow) {
-        function embRand(a, b) {
-            return Math.floor(Math.random() * (b - a + 1)) + a;
-        }
+    // time of holidays
+    if (new Date().getMonth() + 1 === 12) {
+        let embedimSnow = document.getElementById('embedim--snow');
+        if (!embedimSnow) {
+            function embRand(a, b) {
+                return Math.floor(Math.random() * (b - a + 1)) + a;
+            }
 
-        let embCSS =`
+            let embCSS =`
             #embedim--snow {
                 position:fixed;
                 left:0;
@@ -31,16 +33,16 @@
                 margin-top:-10px
             }
         `;
-        let embHTML = '';
+            let embHTML = '';
 
-        for (let i = 1; i < 200; i += 1) {
-            embHTML += '<i class="embedim-snow"></i>';
+            for (let i = 1; i < 200; i += 1) {
+                embHTML += '<i class="embedim-snow"></i>';
 
-            const rndX = embRand(0, 1000000) * 0.0001;
-            const rndO = embRand(-100000, 100000) * 0.0001;
-            const rndT = (embRand(3, 8) * 10).toFixed(2);
-            const rndS = (embRand(0, 10000) * 0.0001).toFixed(2);
-            embCSS += `
+                const rndX = embRand(0, 1000000) * 0.0001;
+                const rndO = embRand(-100000, 100000) * 0.0001;
+                const rndT = (embRand(3, 8) * 10).toFixed(2);
+                const rndS = (embRand(0, 10000) * 0.0001).toFixed(2);
+                embCSS += `
                 .embedim-snow:nth-child(${i}){
                     opacity:${(embRand(1, 10000) * 0.0001).toFixed(2)};
                     transform:translate(${rndX.toFixed(2)}vw,-10px) scale(${rndS});
@@ -57,11 +59,12 @@
                     }
                 }
             `;
-        }
+            }
 
-        embedimSnow = document.createElement('div');
-        embedimSnow.id = 'embedim--snow';
-        embedimSnow.innerHTML = `<style>${embCSS}</style>${embHTML}`;
-        document.body.appendChild(embedimSnow);
+            embedimSnow = document.createElement('div');
+            embedimSnow.id = 'embedim--snow';
+            embedimSnow.innerHTML = `<style>${embCSS}</style>${embHTML}`;
+            document.body.appendChild(embedimSnow);
+        }
     }
 })();
